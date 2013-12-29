@@ -1,0 +1,35 @@
+{
+  "builders":[{
+    "type": "virtualbox",
+    "disk_size": 20000,
+    "guest_os_type": "RedHat",
+    "iso_url": "http://mirrors.kernel.org/centos/6.5/isos/i386/CentOS-6.5-i386-minimal.iso",
+    "iso_checksum": "a4f27ab51d0d2c9d36b68c56b39f752b",
+    "iso_checksum_type": "md5",
+    "ssh_username": "vagrant",
+    "ssh_password": "vagrant",
+    "ssh_wait_timeout": "6000s",
+    "vm_name": "Centos65",
+    "http_directory": "./",
+    "vboxmanage": [
+        [ "modifyvm", "{{.Name}}", "--pae", "on" ]
+      ],
+    "boot_wait": "30s",
+    "boot_command":[
+      "<esc><wait>",
+      "linux ks=http://{{ .HTTPIP }}:{{ .HTTPPort }}/ks.cfg ",
+      "<enter><wait>"
+    ]
+  }],
+  "provisioners":[{
+    "type": "shell",
+    "script": "virtualboxorg.sh"
+  }],
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "output": "./CentOS-6.5-i386-ja.box",
+      "vagrantfile_template": "./Vagrantfile"
+    }
+  ]
+}
