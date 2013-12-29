@@ -1,5 +1,5 @@
 0)Πηγαίνουμε στο https://github.com/aarsakian/HW/tree/master/config
-και κάνουμε λήψη των 4 αρχείων. https://github.com/aarsakian/HW/archive/master.zip
+και κάνουμε λήψη των 5 config αρχείων. https://github.com/aarsakian/HW/archive/master.zip
 
 Εγκαταστήστε το VirtualBox https://www.virtualbox.org
 
@@ -9,7 +9,7 @@ To Λ/Σ θα δεσμεύσει 20GB από το σκληρό σας δίσκο
 
 1-α)Λήψη του packer από την σελίδα http://www.packer.io
 
-1-β)Γράφουμε την εντολή packer build machine.json. Στον ίδιο φάκελο θα χρειαστούμε εκτός από το machine.json και το αρχείο virtualbox.sh. 
+1-β)Γράφουμε την εντολή packer build machine.json. Στον ίδιο φάκελο που τρέχουμε το packer θα χρειαστούμε εκτός από το machine.json και τα αρχεία virtualbox.sh και ks.cfg
 Το packer θα αρχίσει να δημιουργεί το box αρχείο που χρειάζεται το vagrant. 
 
 Αν ολοκληρωθεί επιτυχώς θα δείτε το αρχείο CentOS-6.5-i386-ja.box 
