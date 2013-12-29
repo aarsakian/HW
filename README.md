@@ -1,5 +1,7 @@
 0)Πηγαίνουμε στο https://github.com/aarsakian/HW/tree/master/config
-και κάνουμε λήψη των 4 αρχείων.
+και κάνουμε λήψη των 4 αρχείων. https://github.com/aarsakian/HW/archive/master.zip
+
+Εγκαταστήστε το VirtualBox https://www.virtualbox.org
 
 To Λ/Σ θα δεσμεύσει 20GB από το σκληρό σας δίσκο +1GB για τα iso αρχεία.
 
