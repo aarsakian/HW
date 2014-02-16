@@ -36,9 +36,11 @@ mkdir HWApp
 cd HWApp
 lapis new
 
+luarocks install moonscript
+moonc web.lua
 #sudo /etc/init.d/mysqld start
 #sudo /etc/init.d/nginx start
 #set runlevels
 sudo chkconfig --level 35  nginx on
 sudo chkconfig --level 35  mysqld on
-
+sudo /etc/init.d/iptables stop
