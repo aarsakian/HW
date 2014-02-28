@@ -37,7 +37,7 @@ cd HWApp
 lapis new
 
 luarocks install moonscript
-moonc web.lua
+moonc web.moon
 #sudo /etc/init.d/mysqld start
 #sudo /etc/init.d/nginx start
 #set runlevels
